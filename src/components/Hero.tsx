@@ -17,7 +17,7 @@ function Hero({}: Props) {
         words: [
             "Hi I'm Gabriel",
             'This is my Portafolio', 
-            "<Built with Next.js />"],
+            "<Built with Solidjs />"],
             loop: true,
             delaySpeed: 2000
     })

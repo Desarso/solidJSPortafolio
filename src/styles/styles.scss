@@ -126,6 +126,8 @@ a{
     hover:border-[#F7AB0A]/40;
 }
 
+
+
 @media (max-width: 640px) {
   .name-field {
     // width: 100%;
@@ -192,6 +194,18 @@ a{
   }
 }
 
+@media (max-width: 400px){
+    .text-base{
+       margin-top: 3% !important;
+    }
+
+    .about-image{
+      width: 40%;
+      height: 15%;
+    }
+}
+
+
 @media (max-width: 300px) {
   @media (min-height: 600px) {
     .about-image {
@@ -211,3 +225,5 @@ a{
     }
   }
 }
+
+
