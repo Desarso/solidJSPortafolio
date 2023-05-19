@@ -16,16 +16,16 @@ function index({}: Props) {
 
     <Header />
 
-    <section id="hero" class="snap-start">
+    <section id="hero" class="">
       <Hero />
     </section>
 
-    <section id="about" class="snap-center">
+    <section id="about" class="">
       <About />
     </section>
 
         {/* Projects */}
-    <section id="projects" class="snap-start">
+    <section id="projects" class="">
       <Projects />
     </section>
 
