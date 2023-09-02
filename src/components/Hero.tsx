@@ -19,7 +19,7 @@ function Hero({}: Props) {
             'This is my Portafolio', 
             "<Built with Solidjs />"],
             loop: true,
-            delaySpeed: 2000
+            delaySpeed: 1000,
     })
     
 

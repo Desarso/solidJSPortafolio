@@ -36,10 +36,12 @@ function ChessInfo({}: Props) {
           </h1>
           <p class="text-gray-300 text-l mt-5 ml-10 list-disc mr-20">
             Project is running on AWS, on a single EC2 instance, it uses proxy passing, to also server the graphql.
-            <ul>
-              <li>Link to github: </li>
-            </ul>
+            <a>Link to github: </a>
           </p>
+            <ul class="">
+              
+            </ul>
+          
         </div>
       </div>
 
