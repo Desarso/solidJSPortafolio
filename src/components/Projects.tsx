@@ -56,16 +56,16 @@ function Projects({}: Props) {
                          p-20 md:pd-44 h-screen"
             >
               <A href={project.link}>
-              <Motion.img
-                src={Chess}
-                initial={{
-                  y: "-20%",
-                  opacity: 0,
-                }}
-                transition={{ duration: 1.2 }}
-                inView={{ opacity: 1, y: 0 }}
-                class="w-[50vmin] aspect-square max-h-[50vh] md:max-w-[540px] mb-10   rounded-3xl shadow-2xl mt-[20vh] cursor-pointer"
-              />
+                <Motion.img
+                  src={Chess}
+                  initial={{
+                    y: "-20%",
+                    opacity: 0,
+                  }}
+                  transition={{ duration: 1.2 }}
+                  inView={{ opacity: 1, y: 0 }}
+                  class="w-[50vmin] aspect-square max-h-[50vh] md:max-w-[540px] mb-10   rounded-3xl shadow-2xl mt-[20vh] cursor-pointer"
+                />
               </A>
               <div class="space-y-10 px-0 md:px-10 max-width-6xl">
                 <h4 class="text-4xl font-semibold text-center">
@@ -104,7 +104,7 @@ function Projects({}: Props) {
           )}
         </For>
       </div>
-      <div class="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[50vh] w -skew-y-12"></div>
+      <div class="w-full absolute top-[30%] bg-[#4287f5]/10 left-0 h-[50vh] w -skew-y-12"></div>
     </Motion.div>
   );
 }
