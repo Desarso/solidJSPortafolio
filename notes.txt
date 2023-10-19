@@ -1,0 +1,13 @@
+I want to make a cool text animation
+
+So I am gonna make an array of all of the regular ascii characters, or smaller
+I then randomize that array, I then loop over that array, but I need to do so for each character simulatineously.
+So I need to duplicate or just several different arrays, and I need to modify each letter on each loop. 
+Or maybe I can also randomly choose another letter to change.
+
+
+He is only using, a few symbols, he loops over them for a few times, 
+then it seems like he adds, the correct letters, and then once it choose the correct one the loop exists
+I want a functiont that can create this animation for any string of text
+
+I also want reveal animations, purely in css, that I can add, to be onload with just a class
