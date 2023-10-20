@@ -1,8 +1,10 @@
 import About from "../components/About";
 import BallsBackground from "../components/BallsBackground";
+import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import SmallerProjects from "../components/SmallerProjects";
 
 type Props = {};
 
@@ -29,18 +31,19 @@ function index({}: Props) {
         <Projects />
       </section>
 
+      {/* Small Projects */}
+      <section id="smallProjects" class="snap-start">
+        <SmallerProjects />
+      </section>
+
       {/* Contact Me */}
-      {/* <section id="contact" class="snap-start">
-      <ContactMe/>
-    </section> */}
+      <section id="contact" class="snap-start">
+        <ContactMe />
+      </section>
 
       {/* <section id="experience" class="snap-center">
-      <Experience />
-    </section>
-
-    <section id="skills" class="snap-start">
-      <Skills />
-    </section> */}
+        <Experience />
+      </section> */}
     </div>
   );
 }

@@ -1,86 +1,146 @@
+import BallsBackground from "../components/BallsBackground";
 import Chess from "../components/images/chessBoard.jpg";
 type Props = {};
 
 function ChessInfo({}: Props) {
   return (
-    <div class="bg-[rgb(36,36,36)] w-full h-[100%] flex items-center justify-center">
-      <div class="bg-[rgb(36,36,36)] w-[1000px] h-full">
-        <div class="flex flex-col justify-center items-center pt-10">
-          <h1 class="h-20 uppercase tracking-[10px] text-gray-500 text-3xl">
-            Multiplayer Chess
-          </h1>
-        </div>
+    <>
+      <BallsBackground />
+      <div class="mainContainer h-full overflow-auto bg-[rgba(36,36,36,0)]">
+        <div
+          class="bg-[rgba(36,36,36,0)] w-full  flex items-center justify-center "
+          id="chess-info"
+        >
+          <div class="documentContainer h-[fit-content] ml-[40px] mr-[40px]">
+            <div class="titleContainer">
+              <h1 class="mainArticleTitle">Multiplayer Chess</h1>
+            </div>
 
-        <div class="bg-[rgba(90,75,75,0)] h-[400px] w-full flex mt-10">
-          <div class="w-1/2   bg-[#99545400] z-[0] flex items-center justify-center">
-            <a href="https://gabrielmalek.com/chess/" class="h-[100%]">
-              <img src={Chess} class="h-[100%] rounded-xl chessLink" />
-            </a>
-          </div>
-          <div class="w-[400px] bg-[#5100ff00] z-[0] marker:items-center right-0">
-            <h1 class="mt-uppercase tracking-[2px] text-gray-300 text-xl">
-              Tech Stack
-            </h1>
-            <ul
-              //make bullet points
-              class="text-gray-300 text-l mt-5 ml-10 list-disc"
-            >
-              <li class="ml-5">Solidjs</li>
-              <li class="ml-5">Typescript</li>
-              <li class="ml-5">Apollo Graphqql</li>
-              <li class="ml-5">Nginx</li>
-              <li class="ml-5">Docker</li>
-            </ul>
-            <h1 class="mt-10 uppercase tracking-[2px] text-gray-300 text-xl">
-              Details:
-            </h1>
-            <p class="text-gray-300 text-l mt-5 ml-10 list-disc mr-20">
-              Project is running on AWS, on a single EC2 instance, using nginx,
-              I am also using proxy passing, to server a graphql yoga server.
-            </p>
-            <ul class="text-gray-300 text-l mt-5 ml-10 list-disc">
-              <li>
-                <a
-                  target="_blank"
-                  href="https://github.com/Desarso/NarcissusCopper-chessBot"
-                  class="hover:text-blue-500"
+            <div class="topSummary regular-font ">
+              <div class="summaryContainer">
+                <h1 class="headingTitle ">Tech Stack</h1>
+                <ul
+                  //make bullet points
+                  class="bulletPoints indent"
                 >
-                  Link to github 🔗
+                  <li class="singleBulletPoint">Solidjs</li>
+                  <li class="singleBulletPoint">Typescript</li>
+                  <li class="singleBulletPoint">Go</li>
+                  <li class="singleBulletPoint">Nginx</li>
+                </ul>
+                <h1 class="headingTitle">Summary:</h1>
+                <p class="summary indent">
+                  An online multiplayer chess platform that features real-time
+                  mouse position tracking.
+                </p>
+                <h1 class="headingTitle">Links:</h1>
+                <ul class="links indent">
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Desarso/NarcissusCopper-chessBot"
+                      class="hover:text-blue-500"
+                    >
+                      Link to github 🔗
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://gabrielmalek.com/chess/"
+                      class="hover:text-blue-500"
+                    >
+                      Link to project 🔗
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="imageContainer">
+                <a href="https://gabrielmalek.com/chess/" class="w-[300px] ">
+                  <img src={Chess} class="h-[100%] rounded-xl chessLink" />
                 </a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
+                {/* <a
                   href="https://gabrielmalek.com/chess/"
-                  class="hover:text-blue-500"
+                  class="imageDescription"
                 >
-                  Link to project 🔗
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+                  GO TO PAGE 🔗
+                </a> */}
+              </div>
+            </div>
 
-        {/*footer*/}
-        <div class="ml-12">
-          <h1 class="mt-20 uppercase tracking-[2px] text-gray-300 text-xl">
-            In-Depth:
-          </h1>
-          <p class="text-gray-300 text-l mt-4 ml-10 list-disc mr-20">
-            I decided to do this project a while ago. I originally was writting
-            my own chess engine AI in C++, and eventually decided I would need
-            an UI for people to be able to play against it. After writting all
-            the chess logic, and spending some time messing out with creating
-            the chess UI, I decided a better project would be to create my own
-            little version of chess.com. In order to complete this project I was
-            forced to learn a very long list of technologies, so even though the
-            project seems simple, it was incredibly constructive. The portal is
-            open to anyone, you can go online right now. I will be adding an AI,
-            as well, as a free play to mess around with the board.
-          </p>
+            {/*footer*/}
+            <div class="inDepth">
+              <h1 class="headingTitle">In-Depth:</h1>
+              <p class="paragraph regular-font indent">
+                I decided to do this project a while ago. I originally was
+                writting my own chess engine AI in C++, and eventually decided I
+                would need an UI for people to be able to play against it. After
+                writting all the chess logic, and spending some time messing out
+                with creating the chess UI, I decided a better project would be
+                to create an online multiplayer chess platform.
+              </p>
+              <h3 class="h3 small-indent">Drag N Drop:</h3>
+              <p class="paragraph regular-font large indent text ">
+                For this project, I developed a custom drag-and-drop library
+                from scratch, utilizing mouse events such as clickdown, move,
+                and clickup to handle all its functionality. It achieves this by
+                applying a style transform to the targeted element.
+              </p>
+              <br></br>
+              <p class="paragraph regular-font large indent text ">
+                While the library's syntax drew heavy inspiration from{" "}
+                <span
+                  class="hover:text-blue-500 cursor-pointer italic"
+                  onClick={() => {
+                    window.open("https://solid-dnd.com/");
+                  }}
+                >
+                  Solid DND 🔗
+                </span>
+                {""}, the implementation was entirely independent, with no
+                direct reference to Solid DND. This approach was necessary
+                because I required functionality that Solid DND did not offer.
+                Specifically, I needed every droppable element to detect when a
+                draggable element was initiated for dragging. Later on, this
+                custom library proved invaluable when I added features to enable
+                my virtual mouse implementation to drag game pieces seamlessly.
+              </p>
+
+              <h3 class="h3 small-indent">Virtual Mouse:</h3>
+              <p class="paragraph regular-font large indent text ">
+                This project enhances interactivity by streaming the opponent's
+                mouse movements to the player's screen. It achieves this by
+                transmitting a certain number of mouse events per second. These
+                events, along with screen and board dimensions, are recorded and
+                sent to the server via the WebSockets object handler once a game
+                has started. Subsequently, the data is streamed to the opposing
+                player.
+              </p>
+              <br></br>
+              <p class="paragraph regular-font large indent text ">
+                Upon receiving the mouse coordinates, the client uses them to
+                display a virtual mouse. The management of this virtual mouse is
+                delegated to a dedicated Virtual Mouse class. This class
+                oversees a red circle element, symbolizing the virtual mouse,
+                and it triggers virtual mouse events that the drag-and-drop
+                library can detect. Consequently, the opponent can seamlessly
+                interact with their own game pieces on the player's screen using
+                the same drag-and-drop API.
+              </p>
+
+              <h3 class="h3 small-indent">Web Sockets:</h3>
+              <div class="paragraph regular-font large indent text ">
+                Almost all of the apps communication is done thru a single
+                websockets connection, the Websocket class mantains the
+                connection, and attempts to reconnect when the connections is
+                lost, it also does message routing for the app for the different
+                functionalities.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

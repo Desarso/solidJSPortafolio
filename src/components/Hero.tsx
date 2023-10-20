@@ -9,9 +9,9 @@ function Hero({}: Props) {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
     });
+
     //also change the url
   }
-
   const typeWriter = createTypeWriter({
     words: [
       "Hi, I'm Gabriel",
@@ -22,14 +22,14 @@ function Hero({}: Props) {
     delaySpeed: 1000,
   });
 
-  // onMount(() => {
-  //   //scroll to the element if there is a hash in the url
-  //   const url = window.location.href;
-  //   const hash = url.substring(url.indexOf("#") + 1);
-  //   if (hash) {
-  //     scrollToElement(hash);
-  //   }
-  // });
+  onMount(() => {
+    //scroll to the element if there is a hash in the url
+    const url = window.location.href;
+    const hash = url.substring(url.indexOf("#") + 1);
+    if (hash) {
+      scrollToElement(hash);
+    }
+  });
 
   return (
     <div
@@ -39,8 +39,8 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <img
         class="relative rounded-full h-45 w-40 nx-auto object-cover"
-        src="https://avatars.githubusercontent.com/u/10700498?v=4"
-        alt="image not found"
+        src="https://ik.imagekit.io/dwjyllmmt/compressed/10700498%20(1).jpeg?tr=w-200"
+        alt="Profile Picture"
       />
       <div class="z-20">
         <h2 class="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
@@ -63,7 +63,13 @@ function Hero({}: Props) {
             class="heroButton"
             onClick={() => scrollToElement("projects")}
           >
-            Projects
+            Case Studies
+          </button>
+          <button
+            class="heroButton"
+            onClick={() => scrollToElement("smallProjects")}
+          >
+            Small Projects
           </button>
         </div>
       </div>

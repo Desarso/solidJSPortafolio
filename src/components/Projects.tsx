@@ -12,7 +12,7 @@ function Projects({}: Props) {
     {
       title: "Multiplayer Chess",
       description: `
-              An online chess multiplayer UI built from the ground up using Solidjs, typescript and graphql.`,
+              An online chess multiplayer.`,
       link: "/chess-info",
     },
   ];
@@ -40,8 +40,8 @@ function Projects({}: Props) {
         
         "
     >
-      <h3 class="absolute ml-3 top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Projects
+      <h3 class="absolute ml-3 headerTitle top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+        Case Studies
       </h3>
       <div
         class="relative w-full flex overflow-x-scroll
@@ -74,7 +74,7 @@ function Projects({}: Props) {
                   </span>
                   {project.title}
                 </h4>
-                <div class="sm-display-none text-lg text-center- md:text-left flex flex-row items-center relative">
+                <div class="sm-display-none text-lg items-center relative">
                   {i() != 0 && (
                     // <Link href={`#project-${i}`}>
                     <div
@@ -85,8 +85,7 @@ function Projects({}: Props) {
                     </div>
                     // </Link>
                   )}
-
-                  {project.description}
+                  <div class="text-center">{project.description}</div>
 
                   {i() != projects.length - 1 && (
                     <div

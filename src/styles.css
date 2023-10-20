@@ -16,7 +16,9 @@
   z-index: -1; /* Push the canvas behind other elements */
 }
 
-#root, html, body {
+#root,
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -106,8 +108,12 @@ a {
   display: block;
 }
 
+.icon {
+  fill: #a2a0a0;
+}
+
 .icon:hover {
-  color: #cbc8c8;
+  fill: #ffffff;
 }
 
 .contactInput {
@@ -192,3 +198,152 @@ a {
     padding-right: 10px;
   }
 }
+#chess-info .regular-font {
+  color: #e6e6e6;
+}
+#chess-info .indent {
+  margin-left: 30px;
+}
+#chess-info .small-indent {
+  margin-left: 15px;
+}
+#chess-info .headingTitle {
+  color: #e6e6e6;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+#chess-info .titleContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+#chess-info .titleContainer .mainArticleTitle {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #888888; /* Adjust the color to your preference */
+  font-size: 30px;
+  margin: 40px;
+}
+#chess-info .topSummary {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+}
+#chess-info .topSummary .summary {
+  max-width: 250px;
+}
+#chess-info .documentContainer {
+  max-width: 700px;
+}
+#chess-info .summaryContainer {
+  width: 100%;
+  max-width: 350px;
+  align-self: start;
+  justify-self: start;
+}
+#chess-info .imageContainer {
+  margin-top: 40px;
+}
+#chess-info .imageContainer .imageDescription {
+  padding: 20px;
+  font-size: 18px;
+  color: #e6e6e6;
+  font-weight: bolder;
+  text-align: center;
+}
+#chess-info .imageContainer .imageDescription:hover {
+  color: #f7ab0a;
+}
+#chess-info .bulletPoints {
+  display: flex;
+  list-style: circle;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+#chess-info .h3 {
+  color: #e6e6e6;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  align-self: flex-start;
+}
+#chess-info .inDepth {
+  margin-bottom: 40px;
+}
+@media (max-width: 710px) {
+  #chess-info .titleContainer {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #chess-info .inDepth {
+    max-width: 400px;
+  }
+  #chess-info .topSummary {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #chess-info .topSummary .summaryContainer {
+    align-self: center;
+  }
+  #chess-info .topSummary .summaryContainer .summary {
+    max-width: 700px;
+  }
+  #chess-info .inDepth {
+    max-width: 90vw;
+    margin-left: 5vw;
+  }
+  #chess-info .documentContainer {
+    max-width: 100vw;
+  }
+}
+
+.headerTitle {
+  align-self: center;
+  text-align: center;
+}
+
+.smallProject {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.smallProject .title {
+  margin-top: 20px;
+  font-size: 30px;
+  color: rgb(66, 135, 245);
+}
+.smallProject .description {
+  margin-bottom: 20px;
+  letter-spacing: 0px;
+  max-width: 200px;
+  color: #888888;
+}
+.smallProject .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+@media (max-width: 700px) {
+  .smallProject .image {
+    width: 100px;
+    height: 100px;
+  }
+  .smallProject .description {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  #smallProjects .description {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */
