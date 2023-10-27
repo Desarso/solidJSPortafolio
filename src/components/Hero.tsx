@@ -39,7 +39,7 @@ function Hero({}: Props) {
       <BackgroundCircles />
       <img
         class="relative rounded-full h-45 w-40 nx-auto object-cover"
-        src="https://ik.imagekit.io/dwjyllmmt/compressed/10700498%20(1).jpeg?tr=w-200"
+        src="https://ik.imagekit.io/dwjyllmmt/compressed/10700498%20(1).jpeg?tr=w-300"
         alt="Profile Picture"
       />
       <div class="z-20">

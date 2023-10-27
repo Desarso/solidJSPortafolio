@@ -419,4 +419,23 @@ a {
       display: none;
     }
   }
+  @media (max-height: 700px) {
+    .description {
+      display: none;
+    } 
+  }
+}
+
+
+#contact{
+  @media (max-height: 700px) {
+    .contact-info {
+      margin-top: 0% !important;
+    }
+
+    .contact-me{
+      margin-top: 7rem !important;
+    }
+    
+  }
 }
