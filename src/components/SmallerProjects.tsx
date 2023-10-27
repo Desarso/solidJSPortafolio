@@ -30,7 +30,7 @@ function Skills({}: Props) {
         <SmallProjects
           title="Circles"
           description="An image emerges from splitting circles"
-          link="https://desarso.github.io/circles/"
+          link="https://gabrielmalek.com/circles/"
           image={"circles.jpg"}
         />
         <SmallProjects
