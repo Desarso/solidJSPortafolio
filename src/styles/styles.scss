@@ -104,6 +104,12 @@ body {
 .symbol {
   transition-duration: 200ms !important;
   margin: 10px;
+  &:hover {
+    //change fill color
+    transform: scale(1.2);
+    fill: white !important;
+    color: white !important;
+  }
 }
 
 .social-icon {
@@ -427,20 +433,18 @@ a {
   @media (max-height: 700px) {
     .description {
       display: none;
-    } 
+    }
   }
 }
 
-
-#contact{
+#contact {
   @media (max-height: 700px) {
     .contact-info {
       margin-top: 0% !important;
     }
 
-    .contact-me{
+    .contact-me {
       margin-top: 7rem !important;
     }
-    
   }
 }

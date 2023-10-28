@@ -87,6 +87,11 @@ body {
   transition-duration: 200ms !important;
   margin: 10px;
 }
+.symbol:hover {
+  transform: scale(1.2);
+  fill: white !important;
+  color: white !important;
+}
 
 .social-icon {
   display: flex;
@@ -361,4 +366,4 @@ a {
   #contact .contact-me {
     margin-top: 7rem !important;
   }
-}
+}/*# sourceMappingURL=styles.css.map */

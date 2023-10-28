@@ -5,7 +5,9 @@ import Mail from "./icons/Mail";
 import { ImTwitter } from "solid-icons/im";
 import { BsInstagram } from "solid-icons/bs";
 import { ImLinkedin2 } from "solid-icons/im";
-import resumeIcon from "./icons/resumeIcon.svg";
+import { onMount } from "solid-js";
+import ResumeIcon from "./icons/ResumeIcon";
+import Resume from "../files/Gabriel_Malek_CV.pdf";
 type Props = {};
 
 function Header({}: Props) {
@@ -34,7 +36,7 @@ function Header({}: Props) {
         transition={{
           duration: 1,
         }}
-        class="flex flex-row items-center"
+        class="flex flex-row items-center justify-center"
       >
         {/* Social Icons */}
         <a href="https://github.com/Desarso" class="social-icon">
@@ -42,9 +44,6 @@ function Header({}: Props) {
         </a>
         <a href="https://twitter.com/desarso" class="social-icon">
           <ImTwitter class="icon symbol" size={25} color="gray" />
-        </a>
-        <a href="">
-          <image class="icon symbol" href={resumeIcon} />
         </a>
 
         {/* <a 
@@ -62,6 +61,10 @@ function Header({}: Props) {
           class="social-icon"
         >
           <ImLinkedin2 class="icon symbol" size={25} color="gray" />
+        </a>
+
+        <a href={Resume}>
+          <ResumeIcon className="icon symbol" width={22} fill={"gray"} />
         </a>
       </Motion.div>
 
