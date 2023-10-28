@@ -11,7 +11,7 @@ function BallsBackground({}: Props) {
     canvas.height = window.innerHeight;
     const num_balls = 300;
     const ball_radius = 4;
-    let background_color = [30, 30, 30];
+    let background_color = [16, 36, 57];
     let ball_speed_range = [.5, 1];
     let ball_list = [];
 

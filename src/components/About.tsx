@@ -31,21 +31,24 @@ function About({}: Props) {
 
     let aboutImage = document.querySelector("#about-image");
     let aboutImageSize = aboutImage?.width;
+    let aboutImageHeight = aboutImage?.height;
     setImageSize(aboutImageSize);
     setImageUrl(
-      `https://ik.imagekit.io/dwjyllmmt/compressed/newAbout.jpg?tr=w-${imageSize()}`
+      `https://ik.imagekit.io/dwjyllmmt/compressed/newAbout.jpg?tr=w-${imageSize()},h-${aboutImageHeight}`
     );
     // add event listener to resize image
     window.addEventListener("resize", async () => {
       await sleep(100);
       let aboutImage = document.querySelector("#about-image");
       let aboutImageSize = aboutImage?.width;
+      let aboutImageHeight = aboutImage?.height;
       if (imageSize() < aboutImageSize) {
         setImageSize(aboutImageSize);
-        //round image size to nearest 100
-        aboutImageSize = Math.round(aboutImageSize / 100) * 100;
+        //round image size to highest 100
+        aboutImageSize = Math.ceil(aboutImageSize / 100) * 100;
+        aboutImageHeight = Math.ceil(aboutImageHeight / 100) * 100;
         setImageUrl(
-          `https://ik.imagekit.io/dwjyllmmt/compressed/newAbout.jpg?tr=w-${aboutImageSize}`
+          `https://ik.imagekit.io/dwjyllmmt/compressed/newAbout.jpg?tr=w-${aboutImageSize},h-${aboutImageHeight}`
         );
       }
     });
