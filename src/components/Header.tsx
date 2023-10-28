@@ -5,6 +5,7 @@ import Mail from "./icons/Mail";
 import { ImTwitter } from "solid-icons/im";
 import { BsInstagram } from "solid-icons/bs";
 import { ImLinkedin2 } from "solid-icons/im";
+import resumeIcon from "./icons/resumeIcon.svg";
 type Props = {};
 
 function Header({}: Props) {
@@ -42,6 +43,9 @@ function Header({}: Props) {
         <a href="https://twitter.com/desarso" class="social-icon">
           <ImTwitter class="icon symbol" size={25} color="gray" />
         </a>
+        <a href="">
+          <image class="icon symbol" href={resumeIcon} />
+        </a>
 
         {/* <a 
             href="https://www.instagram.com/desardo/"
@@ -75,13 +79,14 @@ function Header({}: Props) {
         transition={{
           duration: 1,
         }}
-        class="flex flex-row items-center text-gray-300 cursor-pointer"
+        class="flex flex-row items-center text-gray-300 cursor-pointer align-middle justify-center"
       >
-        <div
-          style="display:inline-block;width:50px;height:50px;position:relative;overflow:hidden;vertical-align:middle"
-          onClick={() => goToContact()}
-        >
-          <Mail />
+        <div style="" onClick={() => goToContact()}>
+          <a>
+            <BiRegularEnvelope class="icon symbol" size={25} color="gray" />
+          </a>
+
+          {/* <Mail /> */}
         </div>
         <p
           class="uppercase hidden md:inline-flex text-sm text-gray-400 icon hover:text-gray-50"
