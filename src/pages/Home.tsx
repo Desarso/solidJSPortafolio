@@ -1,6 +1,6 @@
 import { Router, Route, Routes } from "@solidjs/router"; 
 import ChessInfo from "./ChessInfo";
-import  Index  from "./index";
+import  Index  from "./Index";
 
 
 type Props = {}
