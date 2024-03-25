@@ -44,10 +44,10 @@ function Hero({}: Props) {
       />
       <div class="z-20">
         <h2 class="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-          Software engineer
+          Full-Stack Developer
         </h2>
         <h1 class="text-5xl lg:text-6xl font-semibold scroll-px-10">
-          <span class="mr-3">{typeWriter().text}</span>
+          <span class="mr-3 text-gray-500">{typeWriter().text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div class="pt-5">

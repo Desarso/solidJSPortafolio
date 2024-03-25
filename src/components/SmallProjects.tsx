@@ -13,8 +13,10 @@ function sleep(ms: number) {
 
 function SmallProjects({ title, description, image, link }: Props) {
   return (
+    <>
+    <div class="w-full absolute top-[30%] z-0 bg-[#4287f5]/5 left-0 h-[50vh] w -skew-y-12"></div>
     <div
-      class="smallProject"
+      class="smallProject z-10"
       onClick={async () => {
         await sleep(100);
         window.location.href = link;
@@ -30,6 +32,7 @@ function SmallProjects({ title, description, image, link }: Props) {
         />
       </a>
     </div>
+    </>
   );
 }
 

@@ -14,7 +14,7 @@ function index({}: Props) {
       class=" scroll-smooth bg-[rgba(255,255,255,0)] text-white h-screen snap-y snap-mandatory
     overflow-scroll z-0 overflow-x-hidden overflow-x-scroll-hidden"
     >
-      <BallsBackground />
+      {/* <BallsBackground /> */}
 
       <Header />
 

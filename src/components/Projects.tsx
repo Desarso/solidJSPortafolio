@@ -67,7 +67,7 @@ function Projects({}: Props) {
                   class="w-[50vmin] aspect-square max-h-[50vh] md:max-w-[540px] mb-10   rounded-3xl shadow-2xl mt-[20vh] cursor-pointer"
                 />
               </A>
-              <div class="space-y-10 px-0 md:px-10 max-width-6xl">
+              <div class="space-y-10 px-0 md:px-10 max-width-6xl text-gray-400">
                 <h4 class="text-4xl font-semibold text-center">
                   <span class="underline decoration-[#F7AB0A]/50">
                     {i() + 1} of {projects.length}:{" "}

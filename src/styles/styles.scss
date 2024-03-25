@@ -4,6 +4,7 @@
 
 @layer components {
   .heroButton {
+    background-color: white;
     @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs
         tracking-widest text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
   }
@@ -107,8 +108,8 @@ body {
   &:hover {
     //change fill color
     transform: scale(1.2);
-    fill: white !important;
-    color: white !important;
+    fill: rgb(204, 204, 204) !important;
+    color: rgb(203, 203, 203) !important;
   }
 }
 
@@ -391,15 +392,21 @@ a {
 }
 
 .smallProject {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: rgb(184, 184, 184) 2px solid;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.448);
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
   .title {
-    margin-top: 20px;
     font-size: 30px;
-    color: rgb(66 135 245);
+    color: rgb(161, 161, 161);
   }
   .description {
     margin-bottom: 20px;

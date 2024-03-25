@@ -76,7 +76,7 @@ function About({}: Props) {
 
       <div
         id="about-text"
-        class="about-title space-y-10 px-0 md:px-10 mt-[5vh]"
+        class="about-title space-y-10 px-0 md:px-10 mt-[5vh] text-gray-500"
       >
         <h4 class="text-4xl font-semibold">A little background</h4>
         <p class="text-base">
