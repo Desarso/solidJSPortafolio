@@ -10,6 +10,7 @@ function Home({}: Props) {
     <Router>
         <Routes>
             <Route path="/" element={<Index/>} />
+            <Route path="/development" element={<Index/>} />
             <Route 
             path="/chess-info" component={ChessInfo}
              />
