@@ -46,8 +46,8 @@ function Hero({}: Props) {
         <h2 class="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software engineer
         </h2>
-        <h1 class="text-4xl lg:text-6xl font-semibold scroll-px-10">
-          <span class="mr-3">{typeWriter().text}</span>
+        <h1 class="text-3xl lg:text-5xl font-semibold scroll-px-10">
+          <span >{typeWriter().text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <div class="pt-5">
