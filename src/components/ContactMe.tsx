@@ -31,7 +31,7 @@ function ContactMe({}: Props) {
         Contact
       </h3>
       <div class="flex= flex-col space-y-10 contact-me mt-12">
-        <h4 class="sm-display-none text-4xl font-semibold text-center">
+        <h4 class="sm-display-none text-4xl font-semibold text-center text-gray-500">
           Let&apos;s work together
           <span class="decoration-[#F7AB0A]/50 underline"></span>
         </h4>

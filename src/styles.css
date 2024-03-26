@@ -206,7 +206,7 @@ a {
   }
 }
 #chess-info .regular-font {
-  color: #e6e6e6;
+  color: #777777;
 }
 #chess-info .indent {
   margin-left: 30px;
@@ -215,7 +215,6 @@ a {
   margin-left: 15px;
 }
 #chess-info .headingTitle {
-  color: #e6e6e6;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -229,7 +228,6 @@ a {
 #chess-info .titleContainer .mainArticleTitle {
   text-transform: uppercase;
   letter-spacing: 10px;
-  color: #888888; /* Adjust the color to your preference */
   font-size: 30px;
   margin: 40px;
 }
@@ -271,7 +269,6 @@ a {
   justify-content: center;
 }
 #chess-info .h3 {
-  color: #e6e6e6;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;

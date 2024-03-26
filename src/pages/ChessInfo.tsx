@@ -11,7 +11,7 @@ function ChessInfo({}: Props) {
           class="bg-[rgba(36,36,36,0)] w-full  flex items-center justify-center "
           id="chess-info"
         >
-          <div class="documentContainer h-[fit-content] ml-[40px] mr-[40px]">
+          <div class="documentContainer h-[fit-content] ml-[40px] mr-[40px] text-gray-500">
             <div class="titleContainer">
               <h1 class="mainArticleTitle">Multiplayer Chess</h1>
             </div>
