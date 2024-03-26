@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.11.30",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
@@ -20,6 +21,7 @@
   "dependencies": {
     "@motionone/solid": "^10.16.0",
     "@solidjs/router": "^0.8.2",
+    "dotenv": "^16.4.5",
     "motion": "^10.15.5",
     "solid-heroicons": "^3.2.4",
     "solid-icons": "^1.0.4",

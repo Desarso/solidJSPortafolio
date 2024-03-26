@@ -4,8 +4,17 @@ import { For, createSignal } from "solid-js";
 import Chess from "./images/chessBoard.jpg";
 import Arrow from "./icons/Arrow";
 import { A } from "@solidjs/router";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 type Props = {};
+
+//read from .env file
+
+const development = process.env.DEVELOPMENT == "true";
+
+
 
 function Projects({}: Props) {
   const projects = [
@@ -13,7 +22,7 @@ function Projects({}: Props) {
       title: "Multiplayer Chess",
       description: `
               An online chess multiplayer.`,
-      link: "/development/chess-info",
+      link: development == true ?"/development/chess-info" : "/chess-info",
     },
   ];
   const projectDescriptions = [];
