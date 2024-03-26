@@ -12,7 +12,7 @@ type Props = {};
 
 //read from .env file
 
-const development = process.env.DEVELOPMENT == "true";
+const development = 1;
 
 
 
@@ -22,7 +22,7 @@ function Projects({}: Props) {
       title: "Multiplayer Chess",
       description: `
               An online chess multiplayer.`,
-      link: development == true ?"/development/chess-info" : "/chess-info",
+      link: development == 1 ?"/development/chess-info" : "/chess-info",
     },
   ];
   const projectDescriptions = [];
