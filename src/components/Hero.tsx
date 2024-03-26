@@ -43,8 +43,8 @@ function Hero({}: Props) {
         alt="Profile Picture"
       />
       <div class="z-20">
-        <h2 class="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-          Software engineer
+        <h2 class="text-sm uppercase text-gray-500 pb-2 tracking-[15px] text-center">
+          Full Stack Developer
         </h2>
         <h1 class="text-3xl lg:text-5xl font-semibold scroll-px-10">
           <span >{typeWriter().text}</span>

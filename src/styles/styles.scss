@@ -274,7 +274,7 @@ a {
 
   .titleContainer {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     .mainArticleTitle {
       text-transform: uppercase;
@@ -326,7 +326,7 @@ a {
     display: flex;
     list-style: circle;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
   }
 
