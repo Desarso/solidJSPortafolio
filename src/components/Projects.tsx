@@ -13,7 +13,7 @@ function Projects({}: Props) {
       title: "Multiplayer Chess",
       description: `
               An online chess multiplayer.`,
-      link: "/chess-info",
+      link: "/development/chess-info",
     },
   ];
   const projectDescriptions = [];
