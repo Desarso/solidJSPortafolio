@@ -4,9 +4,7 @@ import { For, createSignal } from "solid-js";
 import Chess from "./images/chessBoard.jpg";
 import Arrow from "./icons/Arrow";
 import { A } from "@solidjs/router";
-import dotenv from "dotenv";
 
-dotenv.config();
 
 type Props = {};
 
