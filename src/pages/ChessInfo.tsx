@@ -79,7 +79,7 @@ function ChessInfo({}: Props) {
                 with creating the chess UI, I decided a better project would be
                 to create an online multiplayer chess platform.
               </p>
-              <h3 class="h3 small-indent">Drag N Drop:</h3>
+              <h3 class="h3">Drag N Drop:</h3>
               <p class="paragraph regular-font large indent text ">
                 For this project, I developed a custom drag-and-drop library
                 from scratch, utilizing mouse events such as clickdown, move,

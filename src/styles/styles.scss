@@ -260,12 +260,9 @@ a {
   }
 
   .indent {
-    margin-left: 30px;
-  }
-
-  .small-indent {
     margin-left: 15px;
   }
+
 
   .headingTitle {
     color: #e6e6e6;
@@ -299,6 +296,8 @@ a {
 
   .documentContainer {
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
   }
   .summaryContainer {
     width: 100%;
@@ -342,6 +341,12 @@ a {
 
   .inDepth {
     margin-bottom: 40px;
+    max-width: 80wv;
+    display: flex;
+    flex-direction: column;
+    //center self 
+    align-self: center;
+    justify-self: center;
   }
 
   @media (max-width: 710px) {
@@ -354,7 +359,7 @@ a {
     }
 
     .inDepth {
-      max-width: 400px;
+      max-width: 80vw;
     }
     .topSummary {
       flex-direction: column-reverse;
@@ -369,8 +374,7 @@ a {
     }
 
     .inDepth {
-      max-width: 90vw;
-      margin-left: 5vw;
+      max-width: 80vw;
     }
     .documentContainer {
       // display: flex;
