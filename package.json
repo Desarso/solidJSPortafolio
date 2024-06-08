@@ -21,6 +21,7 @@
     "@motionone/solid": "^10.16.0",
     "@solidjs/router": "^0.8.2",
     "motion": "^10.15.5",
+    "path": "^0.12.7",
     "solid-heroicons": "^3.2.4",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.10",
