@@ -36,13 +36,13 @@ function Skills({}: Props) {
         <SmallProjects
           title="Sorting"
           description="An image emerges from splitting circles"
-          link="https://gabrielmalek.com/sortingVisualizer/"
+          link="https://gabrielmalek.com/sorting_visualizer/"
           image={"sorting.jpg"}
         />
         <SmallProjects
           title="Tower of Hanoi"
           description="An image emerges from splitting circles"
-          link="https://gabrielmalek.com/towersOfHanoi/"
+          link="https://gabrielmalek.com/towers_of_hanoi/"
           image={"towersOfHanoi.jpg"}
         />
         <SmallProjects
