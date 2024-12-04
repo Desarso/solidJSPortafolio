@@ -42,9 +42,6 @@ function Header({}: Props) {
         <a href="https://github.com/Desarso" class="social-icon">
           <ImGithub class="icon symbol" size={25} color="gray" />
         </a>
-        <a href="https://twitter.com/desarso" class="social-icon">
-          <ImTwitter class="icon symbol" size={25} color="gray" />
-        </a>
 
         {/* <a 
             href="https://www.instagram.com/desardo/"
